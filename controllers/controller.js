@@ -5,22 +5,25 @@ const controller = {}
 var lista = [
     {
       "id": 1,
-      "nome": "João",
-      "idade": 30,
-      "cidade": "São Paulo"
+      "nome": "Notebook Lenovo",
+      "descrição":"Notebook Lenovo Ideapad 3i Intel Celeron 4GB 128GB",
+      "qdade": "55",
+      "valor": "1952"
     },
     {
-      "id": 2,
-      "nome": "Maria",
-      "idade": 25,
-      "cidade": "Rio de Janeiro"
-    },
-    {
-      "id": 3,
-      "nome": "Pedro",
-      "idade": 40,
-      "cidade": "Belo Horizonte"
-    }
+    "id": 2,
+    "nome": "Impressora Epson",
+    "descrição":"Impressora Multifuncional Epson Ecotank L3250 - Tanque de Tinta Colorida USB Wi-Fi",
+    "qdade": "32",
+    "valor": "1169"
+  },
+  {
+    "id": 3,
+    "nome": "Notebook Acer",
+    "descrição":"Notebook Gamer Acer AMD Ryzen R7-5800H 8GB - 512GB SSD 15,6” Full HD NVIDIA GTX 1650 4GB",
+    "qdade": "23",
+    "valor": "4499"
+  },
   ]
 
 controller.cadastrar = (req,res)=>{ 
