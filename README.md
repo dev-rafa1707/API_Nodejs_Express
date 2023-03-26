@@ -1,48 +1,75 @@
-# Data_Structures
-Implementação de Estruturas de Dados
-Lista duplamente encadeada
-* doublyLinkedList.py
-
-Arvore Binária
-* binaryTree.py
-
+# API Node.js Express
+API rest Backend server using Node.js and Express
 
 ### Status do Projeto:
 Em construção
 
 ### Features
-#### Lista duplamente encadeada (Doubly Linked List)
+CRUD
 
-![Doubly Linked List](/assets/img/doubly-linked-list.png "Doubly Linked List")
+* Criar novo registro de produto (Create)
 
+* Consultar os produtos cadastrados (Read all)
 
-* Classe Node (Nodo) e Class Dl_List (Lista)
+* Consulta produto por codigo (Read by id)
 
-* Adiciona ao início (Add Head)
-* Adiciona ao final (Add Tale)
-* Remove do início (Remove from Head)
-* Remove do final (Remove from Tale)
+* Edita produto cadastrado (Update by id)
 
-
-#### Arvore Binária (Binary Tree)
-
-![Binary Tree](/assets/img/Binary_tree.png "Binary Tree")
-
-* Classe Node (Nodo) e Class Dl_List (Lista)
-
-* Procura um nodo na árvore (Search)
-* PreOrder (Root, left, right)
-* Order (Left, root, right)
-* PorOrder (Left, raight, root)
+* Exclui produto cadastrado (Delete)
 
 
 ### Pré-requisitos 
-1. Python (v2023.4.1)
+1. Express
 
+#### Modo devDependencies
+3. Nodemon
+
+#### VS Code extensions
+4. REST Client v0.25.1
+(ou você pode usar Postman ou outra extensão para reazlizar o teste das rotas e as respostas)
 
 ### Como rodar a aplicação
-$ git clone <git@github.com:dev-rafa1707/Data_Structures.git>
+$ git clone <git@github.com:dev-rafa1707/API_Nodejs_Express.git>
 
-* Run python file
+* Acesse a pasta do projeto no terminal/cmd indicando o caminho da pasta
+$ cd <path>
+
+* Instale as dependências
+$ npm install
+
+* Execute a aplicação 
+$ npm start servidor.js
+* O servidor inciará na porta:3000
+
+### Para testar o projeto
+* Criar novo registro de produto
+Insere novo registro de produto na lista a partir de interface frontend
+http://localhost:3000/cadastro
+
+
+Para testar essas funcionalidades você deverá utilizar a extensão do VS Code REST Client ou Postman ou outra funcinalidade equivalente
+
+* Consultar os produtos cadastrados
+Retorna a lista de todos os produtos cadastrados
+http://localhost:3000/
+
+* Consulta produto por codigo
+Retorna o produto de acordo com o codigo passado na URL (apenas 1,2,3)
+GET http://localhost:3000/:id
+
+* Edita produto cadastrado
+Edita o produto de acordo com o codigo passado na URL (apenas 1,2,3)
+PUT http://localhost:3000/:id
+
+
+* Exclui produto cadastrado
+Deleta o produto de acordo com o codigo passado na URL (apenas 1,2,3)
+DELETE http://localhost:3000/:id
+
+
+
+
+
+
 
 
