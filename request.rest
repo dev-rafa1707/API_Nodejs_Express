@@ -1,23 +1,35 @@
 
-// Consultar os os usuários cadastrados
-#  GET http://localhost:3000/users
 
 
-// Criar novo usuário
-# POST http://localhost:3000/users
-# Content-Type: application/json
-
-# {
-#   "name": "Jose",
-#   "password": "chave"
-# }
+# Criar novo registro de produto
+# Insere novo registro de produto na lista a partir de interface frontend
+# http://localhost:3000/cadastro
 
 
-// Requisitar acesso
-# POST http://localhost:3000/users/login
-# Content-Type: application/json
+# Para testar essas funcionalidades você deverá utilizar a extensão do VS Code REST Client ou Postman ou outra funcinalidade equivalente
 
-# {
-#   "name": "Maria",
-#   "password": "pasord"
-# }
+# Consultar os produtos cadastrados
+# Retorna a lista de todos os produtos cadastrados
+http://localhost:3000/
+
+* Consulta produto por codigo
+Retorna o produto de acordo com o codigo passado na URL (apenas 1,2,3)
+GET http://localhost:3000/:id
+
+* Edita produto cadastrado
+Edita o produto de acordo com o codigo passado na URL (apenas 1,2,3)
+PUT http://localhost:3000/:id
+
+
+* Exclui produto cadastrado
+Deleta o produto de acordo com o codigo passado na URL (apenas 1,2,3)
+DELETE http://localhost:3000/:id
+
+
+{
+      "id": 1,
+      "nome": "Notebook Lenovo",
+      "descrição":"Notebook Lenovo Ideapad 3i Intel Celeron 4GB 128GB",
+      "qdade": "55",
+      "valor": "1952"
+    }
