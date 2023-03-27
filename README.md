@@ -38,16 +38,23 @@ $ cd <path>
 $ npm install
 
 * Execute a aplicação 
-$ npm start servidor.js
+$ node servidor.js
 * O servidor inciará na porta:3000
 
 ### Para testar o projeto
+
+Para utilizar o request.rest, cada requisição deve ser feita deixando apenas
+aquela requisição desmarcada dos comentário, assim a extensão vai liberar a opção
+"Send Request"
+
 * Criar novo registro de produto
 Insere novo registro de produto na lista a partir de interface frontend
+Pode ser feito pelo caminho abaixo
 http://localhost:3000/cadastro
 
 
-Para testar essas funcionalidades você deverá utilizar a extensão do VS Code REST Client ou Postman ou outra funcinalidade equivalente
+Para testar essas funcionalidades você deverá utilizar a extensão do VS Code REST Client
+ou Postman ou outra funcinalidade equivalente
 
 * Consultar os produtos cadastrados
 Retorna a lista de todos os produtos cadastrados
@@ -55,16 +62,24 @@ http://localhost:3000/
 
 * Consulta produto por codigo
 Retorna o produto de acordo com o codigo passado na URL (apenas 1,2,3)
-GET http://localhost:3000/:id
+GET http://localhost:3000/2
 
 * Edita produto cadastrado
 Edita o produto de acordo com o codigo passado na URL (apenas 1,2,3)
-PUT http://localhost:3000/:id
+PUT http://localhost:3000/1
+    Content-Type: application/json
 
+   {
+     "id": 1,
+     "nome": "Notebook HP",
+     "descrição":"Notebook HP Ideapad 3i Intel Celeron 4GB 128GB",
+     "qdade": "55",
+     "valor": "1952"
+   }
 
 * Exclui produto cadastrado
 Deleta o produto de acordo com o codigo passado na URL (apenas 1,2,3)
-DELETE http://localhost:3000/:id
+DELETE http://localhost:3000/2
 
 
 
