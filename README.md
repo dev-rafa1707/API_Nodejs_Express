@@ -62,12 +62,12 @@ Retorna a lista de todos os produtos cadastrados
 http://localhost:3000/
 
 * Consulta produto por codigo
-Retorna o produto de acordo com o codigo passado na URL (apenas 1,2,3)
-GET http://localhost:3000/2
+Retorna o produto de acordo com o codigo passado na URL o id
+GET http://localhost:3000/:id
 
 * Edita produto cadastrado
-Edita o produto de acordo com o codigo passado na URL (apenas 1,2,3)
-PUT http://localhost:3000/1
+Edita o produto de acordo com o codigo passado na URL o id
+PUT http://localhost:3000/:id
     Content-Type: application/json
 
    {
@@ -79,8 +79,8 @@ PUT http://localhost:3000/1
    }
 
 * Exclui produto cadastrado
-Deleta o produto de acordo com o codigo passado na URL (apenas 1,2,3)
-DELETE http://localhost:3000/2
+Deleta o produto de acordo com o codigo passado na URL o id
+DELETE http://localhost:3000/:id
 
 
 
